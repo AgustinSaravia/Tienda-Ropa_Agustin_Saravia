@@ -1,5 +1,5 @@
-import './components/App'
-function App() {
+
+function NavBar() {
     return <>
     <NavBar/>
     <nav class="navbar navbar-expand-lg bg-light">
@@ -21,4 +21,4 @@ function App() {
     </>
 }
 
-export default App;
+export default NavBar;
