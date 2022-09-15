@@ -1,4 +1,4 @@
-const Carro = () => {
+const CartWidget = () => {
     return(<>
         <i class="bi bi-cart-fill"></i>
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
@@ -9,4 +9,4 @@ const Carro = () => {
     )
 }
 
-export default Carro;
+export default CartWidget;

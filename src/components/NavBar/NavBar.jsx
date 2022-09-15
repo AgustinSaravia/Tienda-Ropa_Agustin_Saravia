@@ -1,5 +1,5 @@
 import "./estilos.css"
-import CartWidget from "./CartWidget.jsx"
+import CartWidget from "../CartWidget/CartWidget"
 
 const NavBar = (props) => {
     return (
