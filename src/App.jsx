@@ -5,7 +5,6 @@ import Item from "./components/item/Item";
 import ItemCount from "./components/itemCount/ItemCount";
 
 
-
 const App = () => {
     return (
     <div>
