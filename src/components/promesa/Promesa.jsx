@@ -11,7 +11,8 @@ let prestamo = (time, task) => {
             }, time);
         } else {
             reject("Error")
-        }});
+        }
+    });
     }
     
     export default prestamo;

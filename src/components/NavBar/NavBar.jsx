@@ -5,8 +5,8 @@ const NavBar = (props) => {
     return (
         <nav className="navbar navbar-expand-sm navbar-light bg-warning">
     <div className="container-fluid">
-    <a className="navbar-brand" href="javascript:void(0)">
-        <img src={props.image} alt="logo" className="logo rounded-pill"/>
+    <a className="navbar-brand" href="#">
+        <img src= {props.image} alt="logo" className="logo rounded-pill"/>
     </a>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
         <span className="navbar-toggler-icon"></span>
@@ -14,13 +14,13 @@ const NavBar = (props) => {
     <div className="collapse navbar-collapse" id="mynavbar">
     <ul className="navbar-nav justify-content-center me-auto nav ">
         <li className="nav-item h5">
-            <a className="nav-link" href="javascript:void(0)">REMERAS</a>
+            <a className="nav-link" href="#">REMERAS</a>
         </li>
         <li className="nav-item h5">
-            <a className="nav-link" href="javascript:void(0)">BUZOS</a>
+            <a className="nav-link" href="#">BUZOS</a>
         </li>
         <li className="nav-item h5">
-            <a className="nav-link" href="javascript:void(0)">PANTALONES</a>
+            <a className="nav-link" href="#">PANTALONES</a>
         </li>
     </ul>
     <form className="d-flex">

@@ -1,35 +1,34 @@
 import { useEffect, useState } from "react";
 import Item from "../item/Item";
 import prestamo from "../promesa/Promesa";
-import produ from '../productos/productos';
+import produ from "../productos/productos";
 
-const lista = () => {
-
-    const [produ, setProdu] = useState([])
+    const Lista = () => {
 
 
-    useEffect(() =>{
-        prestamo(2000, produ)
-            .then(datos => setProdu(produ))
-            .catch(err => console.log(err))
-    },[])
+            const [prode, setProde] = useState([]);
 
 
-    return(
-        <>
-            {
-                produ.map(coso => (
-                    <Item
-                    key={coso.id}
-                    imagen={coso.imagen}
-                    nombre={coso.nombre}    
-                    descripcion={coso.descripcion}
-                    detalles={coso.detalles}
-                    />
-                ))
-                }
+            useEffect(() => {
+                prestamo(2000, produ)
+                .then(produ => setProde(produ))
+                .catch(err => console.log(err))
+            }, []);
+
+
+            return (
+                <>
+                    {
+                    prode.map(coso => (
+                        <Item
+                            key={coso.id}
+                            imagen={coso.imagen}
+                            nombre={coso.nombre}
+                            descripcion={coso.descripcion}
+                            detalles={coso.detalles} />
+                    ))}
                 </>
-    );
-};
+            );
+        }
 
-export default lista;
+export default Lista;
