@@ -4,18 +4,18 @@ import produ from "../productos/productos";
 import prestamo from "../promesa/Promesa";
 
 
-const ItemDEtailContainer = () => {
+const ItemDetailContainer = () => {
     const [dato, setDato] = useState ({});
 
     useEffect(() => {
-        prestamo(2000, produ)
-                .then(produ => setDato(produ [1]))
+        prestamo(2000, produ[1])
+                .then(produ => setDato(produ))
                 .catch(err => console.log(err))
     }, []);
 
     return(
-        <ItemDetail props={dato}/>
+        <ItemDetail iten={dato}/>
     )
 }
 
-export default ItemDEtailContainer;
+export default ItemDetailContainer;
